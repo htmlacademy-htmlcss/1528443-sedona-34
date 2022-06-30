@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -47,18 +48,17 @@
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">
-                    <img class="logo-house" src="images/icons/Union.svg" width="12" height="11,7" alt="Главная" style="background-color: tomato">
+                    <img class="logo-house" src="images/icons/Union.svg" width="12" height="11,7" alt="Главная">
                     </a>
                     </li>
                     <li class="breadcrumbs-item">
-                      <img class="logo-vector" src="images/icons/Vector.svg" width="5,11" height="7,95" alt=">" style="background-color: tomato">
+                      <img class="logo-vector" src="images/icons/Vector.svg" width="5,11" height="7,95" alt=">">
                     </li>
                     <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link">Гостиницы</a>
                     </li>
                     </ul>
-              </header>
-              <section class="catalog-hotels">
+
                 <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -128,7 +128,9 @@
                       <button class="button-apply" type="submit">Применить</button>
                       <button class="button-reset" type="submit">Сбросить</button>
                         </form>
-                <h2>Найдено гостиниц: 38</h2>
+              </header>
+            <section class="catalog-hotels-showed">
+                <h2 class="finded">Найдено гостиниц: 38</h2>
                 <select class="select-control" aria-label="Сортировка">
                   <option value="cheap">Сначала дешевые</option>
                   <option value="popular">Сначала популярные</option>
@@ -153,7 +155,7 @@
                     <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                   </a>
                   <b class="hotel-card-type">Гостиница</b>
-                  <b class="hotel-card-price">От 4000 ₽</b>
+                  <b class="hotel-card-type">От 4000 ₽</b>
                   <a class="product-card-button button" href="#">Подробнее</a>
                   <button class="hotel-choose" type="button">
                     В Избранное
@@ -170,7 +172,7 @@
                     <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                   </a>
                   <b class="hotel-card-type">Гостиница</b>
-                  <b class="hotel-card-price">От 5000 ₽</b>
+                  <b class="hotel-card-type">От 5000 ₽</b>
                   <a class="product-card-button button" href="#">Подробнее</a>
                   <button class="hotel-choosed" type="button">
                     В Избранном
@@ -187,7 +189,7 @@
                     <h3 class="hotel-card-title">Desert Quail Inn</h3>
                   </a>
                   <b class="hotel-card-type">Гостиница</b>
-                  <b class="hotel-card-price">От 2500 ₽</b>
+                  <b class="hotel-card-type">От 2500 ₽</b>
                   <a class="product-card-button button" href="#">Подробнее</a>
                   <button class="hotel-choose" type="button">
                     В Избранное
@@ -203,7 +205,7 @@
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
                 </a>
                 <b class="hotel-card-type">Гостиница</b>
-                <b class="hotel-card-price">От 1500 ₽</b>
+                <b class="hotel-card-type">От 1500 ₽</b>
                 <a class="product-card-button button" href="#">Подробнее</a>
                 <button class="hotel-choose" type="button">
                   В Избранное
@@ -239,11 +241,10 @@
                 <option value="8">8</option>
                 <option value="12">12</option>
               </select>
-              </section>
+            </section>
         </main>
         <footer class="page-footer">
           <section class="user-e-mail">
-            <img class="photo" src="images/background/background.jpg" width="1200" height="411" alt="Фоновое изображение">
             <h2 class="user-e-mail-title">Подпишитесь на рассылку</h2>
             <p class="comment2">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="user-e-mail-form" action="#" method="post">
